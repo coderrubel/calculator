@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+  <!-- Start Calculator Area -->
+  <div class="calculator_area mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="heading text-center" data-aos="fade-in">
+            <h2>Calculate profit</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="panel-calc">
+            <ul class="plan_cal_list">
+              <li class="calc-select">
+                <label style="color:#222;text-align:center">Select a plan</label>
+                <select class="calculate-select" id="calc_plan">
+                  <option value="1">HOURLY FOR 96 HOURS</option>
+                  <option value="2">HOURLY FOR 80 HOURS</option>
+                  <option value="3">HOURLY FOR 50 HOURS</option>
+                  <option value="4">HOURLY FOR 30 HOURS</option>
+                </select>
+              </li>
+              <li class="calc-amount" style="width:40%">
+                <label style="color:#222;text-align:center">Amount to spend</label>
+                <input type="text" class="calculate-amount" id="inv_amount">
+              </li>
+              <li class="blocks-profit3" style="width:30%">
+                <label style="color:#222;text-align:center">Percentage</label>
+                <p class="calshowbox" id="assign_per"></p>
+              </li>
+              <li class="blocks-profit3" style="width:30%">
+                <label style="color:#222;text-align:center">Total</label>
+                <p class="calshowbox" id="total_return"></p>
+              </li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Calculator Area -->
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js_calculator.js"></script>
+
+</body>
